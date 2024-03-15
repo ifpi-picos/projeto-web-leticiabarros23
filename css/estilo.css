@@ -10,8 +10,6 @@
 body {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  margin: auto;
 }
 
 header {
@@ -30,6 +28,7 @@ header img {
 }
 
 .nav-bar {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +90,7 @@ max-width: 100%;
 .texto {
 Position:  relative;
 Position: absolute; 
-top: 348px; left: 90px;
+top: 363px; left: 90px;
 color: white;
 font-family: sans-serif;
 font-size: 20px;
@@ -196,7 +195,10 @@ margin-left: 20px;
  display: flex;
  justify-content: center;
  align-items: center;
+ /* justify-content: space-between; */
  gap: 10px;
+ /* padding-left: 110px; 
+ padding-right: 106px; */
  padding-bottom: 10px;
 }
 
@@ -215,7 +217,7 @@ text-align: center;
 align-items: center;
 justify-content: space-between;
 padding-bottom: 60px; 
-width: 16.625rem;
+width: 15.625rem;
 }
 
 .tranca2 {
@@ -347,7 +349,7 @@ color: #9d6e48;
 .final h2 {
 padding-left: 80px;
 font-size: 20px;
-color: #9d6e48;
+color: #9d6e48
 }
 
 .final p {
@@ -438,3 +440,72 @@ text-decoration: none;
 color: white;
 }
 
+@media screen and (max-width: 782px) {
+
+  .portifolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  
+  .tranca1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 15.625rem;
+  }
+  
+  .nome-trancas-bia {
+    text-align: center;
+    color: #9c6c4c;
+    margin-bottom: 20px;
+  }
+  
+  .meu-botao {
+    padding: 12px 37px;
+    background-color: #9c6c4c;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+  .cards {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .cards section.card {
+    margin-left: 0;
+    margin-bottom: 20px;
+
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
